@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="#e9e9e9" >
+
+    <ImageButton 
+        android:background="@drawable/home_btn_ubicacion"
+        android:src="@drawable/home_icono_ubicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/button"/>
+    <AutoCompleteTextView 
+        android:layout_toLeftOf="@id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_input_buscar"
+        android:hint="Ciudad o Barrio"
+        android:layout_alignParentLeft="true"
+        />
+    
+
+</RelativeLayout>
